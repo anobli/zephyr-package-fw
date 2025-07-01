@@ -1,0 +1,6 @@
+west-commands:
+  - file: scripts/package_fw.py
+    commands:
+      - name: package_fw
+        class: PackageFw
+        help: package firmware for distribution
