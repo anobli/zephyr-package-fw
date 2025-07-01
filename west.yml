@@ -1,0 +1,20 @@
+manifest:
+  version: "1.2"
+
+  defaults:
+    remote: origin
+
+  remotes:
+    - name: origin
+      url-base: https://github.com
+
+  projects:
+    - name: zephyr
+      remote: origin
+      repo-path: zephyrproject-rtos/zephyr
+      revision: main
+      import: true
+
+  self:
+    path: zephyr-package-fw
+    west-commands: scripts/west-commands.yml
